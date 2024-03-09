@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Main {
+    public static void main(String[] args) {
+      //  Write a Java program to calculate the average of a list of integers using streams.
+
+        //4. Write a Java program to remove all duplicate elements from a list using streams.
+
+
+        List<Integer> list =Arrays.asList(1,24,2,43,53,324,53,123,1,1,2,24,43,2);
+
+        List<Integer
+                >   a =  list.stream()
+                    .distinct()
+                .collect(Collectors.toList());
+
+        System.out.println(a);
+
+
+    }
+}
